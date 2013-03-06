@@ -1,0 +1,37 @@
+/* line 2, ../sass/_form.scss */
+#todoform {
+  background: #4f4f4f;
+  font: 12px arial, verdana, helvetica, sans-serif;
+  border-top: 8px solid #cfcfcf;
+  border-left: 8px solid #cfcfcf;
+  border-right: 8px solid #696869;
+  border-bottom: 8px solid #696869;
+  border-collapse: collapse;
+  color: #ff9900;
+}
+/* line 12, ../sass/_form.scss */
+#todoform th {
+  background: black;
+  padding: 3px;
+  font: bold 15px arial, verdana, helvetica, sans-serif;
+  border-bottom: 1px solid #ff9900;
+}
+/* line 19, ../sass/_form.scss */
+#todoform td {
+  padding: 3px;
+}
+/* line 23, ../sass/_form.scss */
+#todoform input {
+  background: #b5b5b5;
+  border: 1px solid #ff9900;
+}
+/* line 28, ../sass/_form.scss */
+#todoform textarea {
+  border: 1px dashed #ff9900;
+}
+/* line 33, ../sass/_form.scss */
+#todoform input.botao {
+  background: black;
+  color: white;
+  border: 2px solid white;
+}
