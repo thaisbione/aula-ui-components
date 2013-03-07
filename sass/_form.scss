@@ -1,12 +1,15 @@
 @import "variaveis";
+@mixin bordaDoForm ($tamanhoBorda: 8px, $tipoBorda: solid, $superiorEsquerda: $bordacinzalight, $superiorDireita: $bordacinzadark) {
+  border-top:8px solid $superiorEsquerda;
+  border-left:8px solid $superiorEsquerda;
+  border-right:8px solid $superiorDireita;
+  border-bottom:8px solid $superiorDireita;
+}
 #todoform {
   background:#4f4f4f;
   font:12px arial, verdana, helvetica, sans-serif;
-  border-top:8px solid $bordacinzalight;
-  border-left:8px solid $bordacinzalight;
-  border-right:8px solid $bordacinzadark;
-  border-bottom:8px solid $bordacinzadark;
   border-collapse:collapse;
+  @include bordaDoForm(8px);
   color: $laranja;
 
   th {
@@ -23,17 +26,15 @@
   input {
     background: $cinza;
     border: 1px solid $laranja;
-  }
-
-  textarea {
-    border:1px dashed $laranja;
-  }
-
-  input {
     &.botao {
       background: $preto;
       color: $branco;
       border: 2px solid $branco;
     }
   }
+
+  textarea {
+    border:1px dashed $laranja;
+  }
+
 }
